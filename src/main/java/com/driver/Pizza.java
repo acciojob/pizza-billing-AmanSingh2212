@@ -52,7 +52,7 @@ public class Pizza {
 
         if(this.extraCheeseAdded)
         {
-            this.bill += "Extra Cheese Added: "+80 + "\n";
+            this.bill += "Extra Cheese Added:"+80 + "\n";
         }
 
         if(this.extraToppingAdded)
