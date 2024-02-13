@@ -48,7 +48,7 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
-        System.out.println("Base Price Of The Pizza: "+ this.pizzaPrice);
+        System.out.println("Base Price Of The Pizza:"+ this.pizzaPrice);
 
         if(this.extraCheeseAdded)
         {
@@ -57,15 +57,15 @@ public class Pizza {
 
         if(this.extraToppingAdded)
         {
-            this.bill += "Extra Toppings Added: "+70+ "\n";
+            this.bill += "Extra Toppings Added:"+70+ "\n";
         }
 
         if(this.paperbag)
         {
-            this.bill += "Paperbag Added: "+20+ "\n";
+            this.bill += "Paperbag Added:"+20+ "\n";
         }
 
-        this.bill += "Total Price: "+this.price + "\n";
+        this.bill += "Total Price:"+this.price + "\n";
 
         return this.bill;
     }
