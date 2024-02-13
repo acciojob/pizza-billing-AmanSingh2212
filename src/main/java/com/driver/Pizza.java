@@ -4,11 +4,11 @@ public class Pizza {
 
     private int price;
     private Boolean isVeg;
-    private String bill;
+    private String bill="";
     private int pizzaPrice;
     private boolean extraCheeseAdded = false;
     private boolean extraToppingAdded = false;
-    private boolean Paperbag = false;
+    private boolean paperbag = false;
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
@@ -43,7 +43,7 @@ public class Pizza {
     public void addTakeaway(){
         // your code goes here
         this.price += 20;
-        this.Paperbag = true;
+        this.paperbag = true;
     }
 
     public String getBill(){
@@ -60,7 +60,7 @@ public class Pizza {
             this.bill += "Extra Toppings Added: "+70+ "\n";
         }
 
-        if(this.Paperbag)
+        if(this.paperbag)
         {
             this.bill += "Paperbag Added: "+20+ "\n";
         }
